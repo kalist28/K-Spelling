@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".training.StudyWordsActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp">
+
+    <kr.co.prnd.StepProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="24dp"
+        app:stepDoneColor="@color/colorPrimary"
+        app:stepMargin="5dp"
+        app:max="1"
+        app:stepUndoneColor="#dedede" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_one"
+            android:background="@drawable/button_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btn_two"
+            android:background="@drawable/button_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btn_three"
+            android:background="@drawable/button_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btn_fore"
+            android:background="@drawable/button_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_check_black_24dp"
+        android:layout_margin="20dp"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</FrameLayout>

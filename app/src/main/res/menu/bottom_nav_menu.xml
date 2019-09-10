@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_tests"
+        android:icon="@drawable/ic_tests"
+        android:title="Тесты" />
+
+    <item
+        android:id="@+id/navigation_levels"
+        android:icon="@drawable/ic_levels"
+        android:title="Уровни" />
+
+    <item
+        android:id="@+id/navigation_correction_mistakes"
+        android:icon="@drawable/ic_correction_mistakes"
+        android:title="РНО" />
+
+</menu>

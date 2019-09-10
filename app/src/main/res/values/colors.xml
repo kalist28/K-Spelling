@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#45688e</color>
+    <color name="colorPrimaryDark">#2e4864</color>
+    <color name="colorBlockLevel">#A4CCCECF</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGray">#dcdcdc</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorAnswerTrue">#4C8E45</color>
+    <color name="colorAnswerFalse">#8E4545</color>
+</resources>

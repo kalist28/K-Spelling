@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:layout_marginRight="12sp"
+        android:layout_marginLeft="12sp"
+        android:layout_marginBottom="12sp"
+        android:background="@color/colorBlockLevel"
+        app:cardElevation="5sp"
+        app:cardCornerRadius="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="10sp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/test_name"
+                    android:text="1 Уровень"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12sp"
+                    android:layout_marginLeft="12sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="28sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/test_assessment"
+                    android:text="пройдено"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12sp"
+                    android:layout_marginLeft="12sp"
+                    android:textColor="@color/colorAnswerTrue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/test_add_info"
+                android:text="1. Пройдите предыдущий уровень.\n2. Наберите 100 очков"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12sp"
+                android:layout_marginLeft="12sp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
